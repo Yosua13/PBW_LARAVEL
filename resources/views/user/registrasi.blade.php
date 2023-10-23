@@ -4,10 +4,12 @@
             {{ __('Tambah User') }}
         </h2>
     </x-slot>
-    /**Yosua Reynaldi Manurun
-    *  6706220097
-    *  D3 RPLA 46-03
-     */
+<!-- 
+Nama    : Yosua Reynaldi Manurun
+NIM     : 6706220097
+Kelas   : D3IF-4603 
+-->
+@section('content')
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -26,7 +28,7 @@
                         <x-text-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus autocomplete="username" />
                         <x-input-error :messages="$errors->get('username')" class="mt-2" />
                     </div>
-
+                    
                     <!-- Full Name -->
                     <div>
                         <x-input-label for="fullname" :value="__('Full Name')" />
@@ -126,4 +128,5 @@
             window.history.back();
         }
     </script>
+@endsection
 </x-app-layout>

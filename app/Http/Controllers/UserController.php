@@ -4,14 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-//         Yosua Reynaldi Manurun
-//         6706220097
-//         D3 RPLA 46-03
+use App\DataTables\UserDataTable;
+
 class UserController extends Controller
 {
-    public function index() {
-        $users = User::all();
-        return view('user.daftarPengguna', compact('users'));
+    // Nama    : Yosua Reynaldi Manurun
+    // NIM     : 6706220097
+    // Kelas   : D3IF-4603
+    
+    // public function index() {
+    //     $users = User::all();
+    //     return view('user.daftarPengguna', compact('users'));
+    // }
+    public function index(UserDataTable $dataTable)
+    {
+        return $dataTable->render('user.daftarPengguna');
     }
 
     public function showUser($username) {
@@ -26,11 +33,11 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-
+        
     }
 
     public function show()
     {
-
+        
     }
 }
