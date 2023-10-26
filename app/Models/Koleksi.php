@@ -20,4 +20,4 @@ class Koleksi extends Model
         'jumlahKeluar',
         'jumlahSisa'
     ];
-};
+}

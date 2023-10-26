@@ -12,13 +12,13 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-    *  Yosua Reynaldi Manurun
-    *  6706220097
-    *  D3 RPLA 46-03
-     * The attributes that are mass assignable.
-     * @var array<int, string>
-     */
+        /**
+         * The attributes that are mass assignable.
+         * @var array<int, string>
+         */
+    // Nama    : Yosua Reynaldi Manurun
+    // NIM     : 6706220097
+    // Kelas   : D3IF-4603
     protected $fillable = [
         'username',
         'fullname',
