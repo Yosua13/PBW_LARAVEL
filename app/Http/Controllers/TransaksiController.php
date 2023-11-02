@@ -11,10 +11,6 @@ use App\Models\Koleksi;
 use App\DataTables\TransaksiDataTable;
 use Carbon\Carbon;
 
-// Nama    : Davin Wahyu Wardana
-// NIM     : 6706223003
-// Kelas   : D3IF-4603
-
 class TransaksiController extends Controller
 {
     public function index(TransaksiDataTable $dataTable)
@@ -45,9 +41,6 @@ class TransaksiController extends Controller
         return view('transaksi.editTransaksi', compact('transaksiDetail', 'transaksi', 'koleksi'));
     }
 
-    // Nama    : Davin Wahyu Wardana
-    // NIM     : 6706223003
-    // Kelas   : D3IF-4603
     public function update(Request $request, $id)
     {
         $request->validate([
